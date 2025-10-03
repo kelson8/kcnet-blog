@@ -19,8 +19,6 @@ Launch and bind to local ip: \hugo.exe server -D --bind `ip-or-url` --baseURL `i
 # TODO For site
 * Update this to add some more blog posts, possibly host this on https://blog.kelsoncraft.net
 
-* Fix time zone in posts from 24 hour to 12 hour time, not sure on how to do that yet. 
-
 ## Themes
 Theme in use: [hello-friend-ng](https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/)
 
