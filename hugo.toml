@@ -1,0 +1,5 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'KelsonCraft Hugo Test'
+#theme = 'reimu'
+theme = 'hello-friend-ng'
