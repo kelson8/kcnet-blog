@@ -22,3 +22,10 @@ Copyright = "Copyright 2025 KCNet/KelsonCraft GPLv3"
 #Params.footer.rss = true
 
 ####
+# For 12h hour time.
+Params.dateformNumTime = "Jan 2, 2006 at 3:04 PM"
+
+# For 24 hour time.
+#Params.dateformNumTime = "2006-01-02 15:04"
+
+#Params.dateformShort = "Jan 2, 2006 at 3:04 PM"
