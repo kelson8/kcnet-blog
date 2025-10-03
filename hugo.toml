@@ -3,3 +3,22 @@ languageCode = 'en-us'
 title = 'KelsonCraft Hugo Test'
 #theme = 'reimu'
 theme = 'hello-friend-ng'
+
+# hello-friend-ng params
+# logo.html
+Params.Logo.logoText = "KCNet Hugo"
+
+# header.html
+Params.EnableThemeToggle = true
+#Params.social = true
+
+#Params.Portrait.Path = "/"
+
+# footer.html
+Params.footer.author = true
+Params.Author.name = "kelson8"
+Params.footer.copyright = true
+Copyright = "Copyright 2025 KCNet/KelsonCraft GPLv3"
+#Params.footer.rss = true
+
+####
