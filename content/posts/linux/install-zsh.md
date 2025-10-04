@@ -5,7 +5,7 @@ draft: true
 toc: false
 images:
 tags:
-  - untagged
+  - linux
 ---
 # Installing ZSH on Linux
 I have created a bash script that can install ZSH, and a couple plugins.
