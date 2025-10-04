@@ -1,5 +1,7 @@
-# Hugo KCNet Test
-This is a basic test website for KelsonCraft using Hugo and markdown.
+# KCNet Blog
+This is a basic blog for KelsonCraft using Hugo and markdown.
+
+To run this, you will need to download the latest version of [Hugo](https://github.com/gohugoio/hugo) and place it in the same folder as the repo.
 
 ## Modifying the site
 To modify the hello-friend-ng theme, I have copied the index.html, and a few other files from the theme into the `layouts` folder.
@@ -16,8 +18,11 @@ Command: .\hugo.exe server -D
 
 Launch and bind to local ip: \hugo.exe server -D --bind `ip-or-url` --baseURL `ip-or-url`
 
+I now have scripts to run this on Windows `run-hugo.bat` and Linux (untested) `run-hugo.sh`
+
 # TODO For site
 * Update this to add some more blog posts, possibly host this on https://blog.kelsoncraft.net
+* Setup static site build and test with NGINX or another web server.
 
 ## Themes
 Theme in use: [hello-friend-ng](https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/)
