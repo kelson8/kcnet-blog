@@ -1,12 +1,12 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'KelsonCraft Hugo Test'
+title = 'KelsonCraft Blog'
 #theme = 'reimu'
 theme = 'hello-friend-ng'
 
 # hello-friend-ng params
 # logo.html
-Params.Logo.logoText = "KCNet Hugo"
+Params.Logo.logoText = "KCNet Blog"
 
 # header.html
 Params.EnableThemeToggle = true
@@ -39,7 +39,7 @@ enableEmoji     = true
 
 [params]
   # TODO Figure out how to get the below items to work
-  backgroundImage = "assets/images/background.jpg"
+  backgroundImage = "assets/images/anime-girl-2880x1800-10025-2754496868.jpg"
 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
   # Addon: Social icons
