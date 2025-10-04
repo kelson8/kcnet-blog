@@ -29,3 +29,50 @@ Params.dateformNumTime = "Jan 2, 2006 at 3:04 PM"
 #Params.dateformNumTime = "2006-01-02 15:04"
 
 #Params.dateformShort = "Jan 2, 2006 at 3:04 PM"
+
+## Test, copied from config.toml in theme
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+
+
+[params]
+  # TODO Figure out how to get the below items to work
+  backgroundImage = "assets/images/background.jpg"
+
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # Addon: Social icons
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  #
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:nobody@example.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/"
+
+  [[params.social]]
+    name = "stackoverflow"
+    url  = "https://www.stackoverflow.com/"
+
+[menu]
+  [[menu.main]]
+    identifier = "blog-intro"
+    name       = "Blog Intro"
+    url        = "posts/blog-intro"
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
+
+####
