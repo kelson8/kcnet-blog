@@ -1,0 +1,45 @@
+# I got this working fine, I had to modify the base url and add --appendPort=false.
+
+# To run these, first build this:
+# docker compose build
+
+# Then run this for the dev server:
+# docker compose up hugo-dev 
+
+# Or run this to build the site:
+# docker compose run hugo-build 
+
+services:
+  hugo-dev:
+    container_name: kcnet-blog-dev
+    build: .
+    networks:
+      - proxy
+    ports:
+      - "8081:8081"
+    volumes:
+      - .:/src
+    environment:
+      HUGO_ENV: "development"
+      # HUGO_BASEURL: "http://ubuntu-server.lan:8081"  # Set your baseURL here
+      HUGO_BASEURL: "https://blog.local.kelsoncraft.net"  # Set your baseURL here
+    command: ["hugo", "server", "--bind", "0.0.0.0", "--port=8081", "--baseURL", "https://blog.local.kelsoncraft.net", "--watch", "--appendPort=false"]
+#    command: ["hugo", "server", "--bind", "0.0.0.0", "--port=8081", "--baseURL", "http://localhost:8080", "--watch"]
+
+  hugo-build:
+    container_name: kcnet-blog-build
+    build: .
+    networks:
+      - proxy
+    volumes:
+      - .:/src
+    environment:
+      HUGO_ENV: "production"
+      # HUGO_BASEURL: "http://ubuntu-server.lan:8081"  # Set your baseURL here
+      HUGO_BASEURL: "https://blog.local.kelsoncraft.net"  # Set your baseURL here
+    # command: ["hugo", "--port=8080", "--baseURL", "http://localhost:8080", "--appendPort=false"]
+    command: ["hugo", "--port=8081", "--baseURL", "--baseURL", "https://blog.local.kelsoncraft.net", "--appendPort=false"]
+
+networks:
+  proxy:
+    external: true
