@@ -1,7 +1,7 @@
 ---
 title: "Minecraft Command Block Tutorials"
 date: 2025-10-04T15:08:18-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags:

@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://192.168.1.109:8081/'
 languageCode = 'en-us'
 title = 'KelsonCraft Blog'
 #theme = 'reimu'
@@ -36,6 +36,10 @@ enableRobotsTXT = true
 enableGitInfo   = false
 enableEmoji     = true
 
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
 [params]
   # TODO Figure out how to get the below items to work

@@ -9,6 +9,7 @@ protocol=http
 # Set the bind IP
 bindIP=192.168.1.109
 # Set the port to run this with
-port=1313
+# port=1313
+port=8081
 
 ./hugo server -D --bind "$bindIP" --baseURL "$protocol"://"$bindIP" --port="$port" --disableFastRender

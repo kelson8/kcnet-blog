@@ -1,7 +1,7 @@
 ---
 title: "Install Zsh On Linux"
 date: 2025-10-04T13:43:07-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
