@@ -1,4 +1,6 @@
 baseURL = 'http://192.168.1.109:8081/'
+# For test blog on ubuntu-server.lan
+#baseURL = 'https://blog.local.kelsoncraft.net'
 languageCode = 'en-us'
 title = 'KelsonCraft Blog'
 #theme = 'reimu'
@@ -18,7 +20,7 @@ Params.EnableThemeToggle = true
 Params.footer.author = true
 Params.Author.name = "kelson8"
 Params.footer.copyright = true
-Copyright = "Copyright 2025 KCNet/KelsonCraft GPLv3"
+Copyright = "© 2025 | Content licensed under CC BY 4.0 | Code licensed under GPLv3"
 #Params.footer.rss = true
 
 ####
