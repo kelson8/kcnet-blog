@@ -1,3 +1,10 @@
+#
+ # This file is licensed under the GPLv3 License.
+ # Copyright © 2025 kelson8
+ #
+ # [https://www.gnu.org/licenses/gpl-3.0.txt]
+#
+
 # I got this working fine, I had to modify the base url and add --appendPort=false.
 
 # To run these, first build this:

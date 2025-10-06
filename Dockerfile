@@ -1,5 +1,11 @@
-# This mostly works, generated with duck.ai from duckduckgo.
-# It just needs to be fixed to display the posts at the proper url.
+#
+ # This file is licensed under the GPLv3 License.
+ # Copyright © 2025 kelson8
+ #
+ # [https://www.gnu.org/licenses/gpl-3.0.txt]
+#
+
+# This works fine, generated with duck.ai from duckduckgo.
 
 # Use a lightweight base image
 FROM alpine:latest
@@ -13,6 +19,8 @@ ENV HUGO_VERSION=0.151.0
 ENV HUGO_PORT=8080
 
 # Install Hugo
+# This gets the hugo version that is set above, the original version was last updated two years ago
+# https://hub.docker.com/r/klakegg/hugo/
 RUN curl -L -o hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz && \
     tar -xvzf hugo.tar.gz && \
     mv hugo /usr/local/bin/ && \
