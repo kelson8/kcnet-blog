@@ -15,3 +15,7 @@ I have setup the [hello-friend-ng](https://themes.gohugo.io/themes/hugo-theme-he
 
 I will be adding quite a bit to this blog, such as Linux scripts, Windows scripts, game info, Minecraft, and coding topics/projects.
 There will be more when I think of what exactly to add, and I may use my pastebin service [privatebin.kelsoncraft.net](https://pastebin.kelsoncraft.net) for code snippets or other text for the blog in the future.
+
+This blog has the source code on my GitHub [https://github.com/kelson8/kcnet-blog](https://github.com/kelson8/kcnet-blog).
+
+I have decided to license the code under GPLv3, and the content such as the posts under the CC BY 4.0 license.
