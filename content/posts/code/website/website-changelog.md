@@ -73,3 +73,9 @@ https://github.com/kelson8/FlaskWeb/commit/dd97a03df9182b0f8478537208a306606233a
 
 Refactor more pages into their own files, instead of being in the main flask_web.py file
 https://github.com/kelson8/FlaskWeb/commit/a5ffd0bc2f34d724cb5e4de32577d5c127fed68c
+
+1:39PM
+
+I have disabled direct viewing of .sh files in the browser due to the page crashing
+
+https://github.com/kelson8/FlaskWeb/commit/680007f4ef8e68598ac78b29fb94debeffef0fa0
