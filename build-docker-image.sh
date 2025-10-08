@@ -19,6 +19,10 @@ runDockerImage=true
 # Set this to true to build this image, which builds the public directory for hugo
 BUILD_DOCKER_IMAGE=true
 
+# Set this to true to reset the cache when building.
+# Should be useful for when I don't change much.
+BUILD_NO_CACHE=false
+
 # TODO Change once I publish the site.
 baseURL=https://blog.local.kelsoncraft.net
 
@@ -35,9 +39,13 @@ NGINX_BLOG_DATA_DIR="$HOME/git/docker-projects/ubuntu-server/kcnet-blog-nginx/da
 # Make this run the docker compose image if enabled
 
 if [ $BUILD_DOCKER_IMAGE = true ]; then
-    docker build -t kcnet-blog .
+    if [ $BUILD_NO_CACHE = true ]; then
+        docker build --no-cache -t kcnet-blog .
+    else
+        docker build -t kcnet-blog .
+    fi
 
-    docker run --rm -v "$(pwd):/src" kcnet-blog hugo --destination public --baseURL "$baseURL"
+   docker run --rm -v "$(pwd):/src" kcnet-blog hugo --destination public --baseURL "$baseURL"
 fi
 
 # Delete old nginx data directory, copy new files to the nginx data directory
@@ -47,6 +55,8 @@ if [ $runDockerImage = true ]; then
     if [ -d "$NGINX_BLOG_DATA_DIR" ]; then
         echo "Deleting and re-creating nginx blog data dir."
         rm -r "$NGINX_BLOG_DATA_DIR"
+        mkdir "$NGINX_BLOG_DATA_DIR"
+    else
         mkdir "$NGINX_BLOG_DATA_DIR"
     fi
 
