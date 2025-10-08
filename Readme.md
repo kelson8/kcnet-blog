@@ -3,6 +3,8 @@ This is a basic blog for KelsonCraft using Hugo and markdown.
 
 To run this, you will need to download the latest version of [Hugo](https://github.com/gohugoio/hugo) and place it in the same folder as the repo.
 
+This needs some submodules for the theme to work, to obtain those use this command: `git clone https://github.com/kelson8/kcnet-blog.git --recurse-submodules --recursive`
+
 ## Modifying the site
 To modify the hello-friend-ng theme, I have copied the index.html, and a few other files from the theme into the `layouts` folder.
 
@@ -23,6 +25,7 @@ I now have scripts to run this on Windows `run-hugo.bat` and Linux (untested) `r
 # TODO For site
 * Update this to add some more blog posts, possibly host this on https://blog.kelsoncraft.net
 * Setup static site build and test with NGINX or another web server.
+* Setup [Giscus](https://giscus.app/) for comments on the posts with GitHub.
 
 ## Themes
 Theme in use: [hello-friend-ng](https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/)

@@ -18,7 +18,7 @@ change these values to true in the script:
 * INSTALL_P10K
 * INSTALL_ZSH_PLUGINS
 
-Here is the script for installing ZSH with my custom zshrc: [Bash ZSH installer](https://git.internal.kelsoncraft.net/kelson8/scripts/src/branch/main/installers/install-zsh.sh)
+Here is the script for installing ZSH with my custom zshrc: [Bash ZSH installer](https://kelsoncraft.net/download/scripts/install-zsh.sh)
 
 ## ZSH Plugin List
 * [ZSH syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)

@@ -1,4 +1,6 @@
 # Tags
+* [Code](/tags/code)
+* [Website](/tags/website)
 * [Minecraft](/tags/minecraft)
 * [Linux](/tags/linux)
 * [Web Browser](/tags/web-browser)
