@@ -1,12 +1,5 @@
 #!/bin/bash
 
-#
- # This file is licensed under the GPLv3 License.
- # Copyright © 2025 kelson8
- #
- # [https://www.gnu.org/licenses/gpl-3.0.txt]
-#
-
 # This is a recreation of the run-hugo.bat Windows batch file.
 # This is a basic script to run hugo for Linux with a specific protocol, ip, and port.
 

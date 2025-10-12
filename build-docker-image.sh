@@ -1,12 +1,5 @@
 #!/bin/bash
 
-#
- # This file is licensed under the GPLv3 License.
- # Copyright © 2025 kelson8
- #
- # [https://www.gnu.org/licenses/gpl-3.0.txt]
-#
-
 # This basic script runs a docker build, then builds the public folder with hugo.
 
 #------
@@ -27,14 +20,28 @@ BUILD_NO_CACHE=false
 # Seems to break my blog on the VPS if i don't do this
 RESTART_NGINX_CONTAINER=true
 
-# TODO Change once I publish the site.
-baseURL=https://blog.local.kelsoncraft.net
+# If this is true, it should set the variables to my local environment
+# If false, it will run off the variables for my VPS.
+LOCAL_SITE=false
 
-# KCNet Hugo blog folder
-BLOG_DIR="$HOME/git/docker-projects/ubuntu-server/kcnet-blog"
-# KCNet Blog Nginx folder, and nginx data folder
-NGINX_BLOG_DIR="$HOME/git/docker-projects/ubuntu-server/kcnet-blog-nginx"
-NGINX_BLOG_DATA_DIR="$HOME/git/docker-projects/ubuntu-server/kcnet-blog-nginx/data"
+if [ $LOCAL_SITE = true ]; then
+    baseURL=https://blog.local.kelsoncraft.net
+    # KCNet Hugo blog folder
+    BLOG_DIR="$HOME/git/docker-projects/ubuntu-server/kcnet-blog"
+    # KCNet Blog Nginx folder, and nginx data folder
+    NGINX_BLOG_DIR="$HOME/git/docker-projects/ubuntu-server/kcnet-blog-nginx"
+    NGINX_BLOG_DATA_DIR="$HOME/git/docker-projects/ubuntu-server/kcnet-blog-nginx/data"
+else
+    baseURL=https://blog.kelsoncraft.net
+
+    # KCNet Hugo blog folder
+    BLOG_DIR="$HOME/docker/kcnet-blog"
+    # KCNet Blog Nginx folder, and nginx data folder
+    NGINX_BLOG_DIR="$HOME/docker/kcnet-blog-nginx"
+    NGINX_BLOG_DATA_DIR="$HOME/docker/kcnet-blog-nginx/data"
+fi
+
+
 
 #------
 # Functions

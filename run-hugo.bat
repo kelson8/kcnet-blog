@@ -1,10 +1,3 @@
-@REM
- @REM This file is licensed under the GPLv3 License.
- @REM Copyright © 2025 kelson8
- @REM
- @REM [https://www.gnu.org/licenses/gpl-3.0.txt]
-@REM
-
 @REM This is a basic script to run hugo for Windows with a specific protocol, ip, and port.
 
 @REM Set this to either http or https

@@ -80,12 +80,16 @@ I have disabled direct viewing of .sh files in the browser due to the page crash
 
 https://github.com/kelson8/FlaskWeb/commit/680007f4ef8e68598ac78b29fb94debeffef0fa0
 
+----
+
 #### 10-9-2025
 1:04PM
 
 I have now created a base html file for my Flask project to use instead of duplicating the same html everywhere and changed most of my html to use this new format, it makes the code much neater and easier to maintain.
 
 https://github.com/kelson8/FlaskWeb/commit/bf5a2a5f215c27bb89614a28bd8120ae7ff06a84
+
+----
 
 #### 10-12-2025
 2:50PM

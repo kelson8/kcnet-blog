@@ -1,10 +1,3 @@
-#
- # This file is licensed under the GPLv3 License.
- # Copyright © 2025 kelson8
- #
- # [https://www.gnu.org/licenses/gpl-3.0.txt]
-#
-
 # This works fine, generated with duck.ai from duckduckgo.
 
 # Use a lightweight base image
