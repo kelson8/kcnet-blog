@@ -20,10 +20,15 @@ Command: .\hugo.exe server -D
 
 Launch and bind to local ip: \hugo.exe server -D --bind `ip-or-url` --baseURL `ip-or-url`
 
-I now have scripts to run this on Windows `run-hugo.bat` and Linux (untested) `run-hugo.sh`
+I now have scripts to run this on Windows `run-hugo.bat` and Linux `run-hugo.sh`
+
+To use my docker build script (`build-docker-image.sh`):
+* Change the `BLOG_DIR` to the path where you have this repo cloned, and setup these `NGINX_BLOG_DIR`, `NGINX_BLOG_DATA_DIR` into a spot to place the static files, such as another Nginx server running with Docker.
+
+This site can now be run with docker, use the `build-docker-image.sh` script to run the build for hugo, and copy the files to the nginx data dir.
 
 # TODO For site
-* Update this to add some more blog posts, possibly host this on https://blog.kelsoncraft.net
+* Update this to add some more blog posts
 * Setup static site build and test with NGINX or another web server.
 * Setup [Giscus](https://giscus.app/) for comments on the posts with GitHub.
 

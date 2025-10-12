@@ -23,6 +23,10 @@ BUILD_DOCKER_IMAGE=true
 # Should be useful for when I don't change much.
 BUILD_NO_CACHE=false
 
+# If this should restart the nginx container.
+# Seems to break my blog on the VPS if i don't do this
+RESTART_NGINX_CONTAINER=true
+
 # TODO Change once I publish the site.
 baseURL=https://blog.local.kelsoncraft.net
 
@@ -76,4 +80,11 @@ if [ $runDockerImage = true ]; then
     else
         echo "File copy failed! Check the script, index.html does not exist in the data dir."
     fi
+fi
+
+# Restart nginx container.
+if [ $RESTART_NGINX_CONTAINER = true ]; then
+    cd "$NGINX_BLOG_DIR" || exit 1
+    docker compose down
+    docker compose up -d
 fi
