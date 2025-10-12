@@ -1,4 +1,7 @@
-baseURL = 'http://192.168.1.109:8081/'
+# baseURL = 'http://192.168.1.109:8081/'
+# If using on VPS:
+baseURL = 'https://kelsoncraft.net'
+
 # For test blog on ubuntu-server.lan
 #baseURL = 'https://blog.local.kelsoncraft.net'
 languageCode = 'en-us'
@@ -6,13 +9,17 @@ title = 'KelsonCraft Blog'
 #theme = 'reimu'
 theme = 'hello-friend-ng'
 
+# Set page limit to 10 posts per page.
+pagination.pagerSize = 10
+
 # hello-friend-ng params
 # logo.html
 Params.Logo.logoText = "KCNet Blog"
 
 # header.html
 Params.EnableThemeToggle = true
-#Params.social = true
+# Well this breaks the site.
+# Params.social = true
 
 #Params.Portrait.Path = "/"
 
@@ -45,7 +52,7 @@ enableEmoji     = true
 
 [params]
   # TODO Figure out how to get the below items to work
-  backgroundImage = "assets/images/anime-girl-2880x1800-10025-2754496868.jpg"
+  # backgroundImage = "assets/images/anime-girl-2880x1800-10025-2754496868.jpg"
 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
   # Addon: Social icons
@@ -72,6 +79,10 @@ enableEmoji     = true
     url  = "https://www.stackoverflow.com/"
 
 [menu]
+  [[menu.main]]
+    identifier = "home-page"
+    name = "Website Home"
+    url = "https://kelsoncraft.net/"
   [[menu.main]]
     identifier = "blog-intro"
     name       = "Blog Intro"
