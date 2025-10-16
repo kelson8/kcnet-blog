@@ -1,7 +1,7 @@
 ---
 title: "Containerize a Nodejs Application Using Docker"
 date: 2025-10-16T19:03:30-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags:

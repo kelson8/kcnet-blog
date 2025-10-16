@@ -1,7 +1,7 @@
 ---
 title: "Fix Pihole blocking Fitbit app"
 date: 2025-10-16T18:57:59-04:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
