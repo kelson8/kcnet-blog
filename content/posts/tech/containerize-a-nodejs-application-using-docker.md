@@ -11,7 +11,7 @@ tags:
 
 1. Create a Dockerfile:
 ```Dockerfile
-FROM 22.20.0-alpine3.21
+FROM node:22.20.0-alpine3.21
 WORKDIR /app
 
 COPY package.json .
