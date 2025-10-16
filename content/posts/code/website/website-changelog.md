@@ -98,3 +98,12 @@ I have updated the video pages to use plyr js, it makes the video player look be
 This also disables direct downloads of the website videos, i may re-enable that later
 
 https://github.com/kelson8/FlaskWeb/commit/c05b4e65f603f6d21d555950bb55e40be2061e61
+
+#### 10-15-2025
+11:27PM
+
+I have now enabled the login test to work for certain items on the website, and I have changed the dark mode button.
+There are quite a few other misc changes in this commit.
+Also, there is one thing currently broken, dark mode isn't on by default but I'll fix it later.
+
+https://github.com/kelson8/FlaskWeb/commit/cd1450b90e025a76b1c0dea591601aae40092efd 
