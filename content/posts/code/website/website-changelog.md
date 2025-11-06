@@ -109,3 +109,19 @@ There are quite a few other misc changes in this commit.
 Also, there is one thing currently broken, dark mode isn't on by default but I'll fix it later.
 
 https://github.com/kelson8/FlaskWeb/commit/cd1450b90e025a76b1c0dea591601aae40092efd 
+
+----
+
+#### 11-6-2025
+2:21PM
+
+I have now fixed the contrast for the links on the website in light mode, I broke it when i changed my dark mode button and couldn't figure out how to fix it before.
+
+https://github.com/kelson8/FlaskWeb/commit/2698e2a2738c63caf91a59e4ef6d3ee6bde9d009 
+
+2:49PM
+
+Updated bootstrap version on website from 5.3.3 to 5.3.8, and updated python version to 3.12.12
+
+https://github.com/kelson8/FlaskWeb/commit/27d4a5b2713a9bc4723b635a3dcaffeebc1aeaf9
+https://github.com/kelson8/FlaskWeb/commit/74fe51146a1146b5b4de22b9c5c237fdebdb2892
