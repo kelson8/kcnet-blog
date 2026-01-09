@@ -1,30 +1,36 @@
 {{ define "body" }}
-    <body class="{{ if .Site.Params.backgroundImage }} background-image" style="background-image: url('{{ .Site.Params.backgroundImage }}');" {{ else }}"{{ end }}>
+
+<body class="{{ if .Site.Params.backgroundImage }} background-image"
+    style="background-image: url('{{ .Site.Params.backgroundImage }}');" {{ else }}"{{ end }}>
 {{ end }}
 
 {{ define "main" }}
-    <main>
-        <div>
-            {{ if .Site.Params.Portrait.Path }}
-               <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
-            {{ end }}
+    <div class="content-center">
+        <main>
+            <div>
+                {{ if .Site.Params.Portrait.Path }}
+                <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}"
+                    style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
+                {{ end }}
 
-            <h1>{{ .Site.Title }}</h1>
+                <h1>{{ .Site.Title }}</h1>
 
-            <p> Welcome to the KelsonCraft Blog, this is created using <a href="https://gohugo.io/">Hugo</a>. </p>
-            <p> This blog is mostly created with markdown, besides a few html pages in some of the folders. </p>
+                <p> Welcome to the KelsonCraft Blog, this is created using <a href="https://gohugo.io/">Hugo</a>. </p>
+                <p> This blog is mostly created with markdown, besides a few html pages in some of the folders. </p>
 
-            <p> Site posts: <a href="/posts">Posts</a> </p>
+                <p> Site posts: <a href="/posts">Posts</a> </p>
 
-            <p> Flask website changelog: <a href="/posts/code/website/website-changelog/"> Website changelog </a> </p>
+                <p> Flask website changelog: <a href="/posts/code/website/website-changelog/"> Website changelog </a>
+                </p>
 
-            {{ partial "subtitle.html" . }}
+                {{ partial "subtitle.html" . }}
 
-            {{- with .Site.Params.social }}
+                {{- with .Site.Params.social }}
                 <div>
                     {{ partial "social-icons.html" . }}
                 </div>
-            {{- end }}
-        </div>
-    </main>
+                {{- end }}
+            </div>
+        </main>
+    </div>
 {{ end }}
