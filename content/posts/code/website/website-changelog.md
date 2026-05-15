@@ -1,6 +1,6 @@
 ---
 title: "Website Code Changelog"
-date: 2025-10-08T12:55:06-04:00
+date: 2026-05-15T11:30:06-04:00
 draft: false
 toc: false
 images:
@@ -9,7 +9,7 @@ tags:
   - website
 ---
 
-This is mirrored from my discord under the "website-info" channel.
+This is manually mirrored from my discord under the "website-info" channel.
 
 #### 6-23-2025 
 4:26PM
@@ -125,3 +125,24 @@ Updated bootstrap version on website from 5.3.3 to 5.3.8, and updated python ver
 
 https://github.com/kelson8/FlaskWeb/commit/27d4a5b2713a9bc4723b635a3dcaffeebc1aeaf9
 https://github.com/kelson8/FlaskWeb/commit/74fe51146a1146b5b4de22b9c5c237fdebdb2892
+
+----
+
+#### 1-9-2026
+3:07PM
+
+I updated the copyright year for the website, and the blog.
+Now the website will automatically update the copyright year, the blog will still have to be manually updated but it's not too big of a deal for me.
+
+----
+
+#### 5-15-2026
+11:21AM
+
+I have updated the website from using Python 3.12.12 to 3.14.5, there doesn't seem to be any noticeable changes and my version had some possible exploits that could've been used.
+
+I attempted to upgrade locally first to make sure this was all working.
+The website seems to be stable on the latest version.
+
+Here is the latest commit to the website update, I made another small commit but it was just fixing something:
+https://github.com/kelson8/FlaskWeb/commit/1edd83b4b9f4ab9fe67ac8501573ebd364baf6b4
