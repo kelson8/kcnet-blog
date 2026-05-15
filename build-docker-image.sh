@@ -2,6 +2,9 @@
 
 # This basic script runs a docker build, then builds the public folder with hugo.
 
+# WARNING, this will wipe the contents for the NGINX_BLOG_DIR folder.
+# DO NOT keep anything needed in that folder, it is automatically generated.
+
 #------
 # Variables
 #------
