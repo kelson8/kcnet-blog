@@ -1,6 +1,6 @@
 ---
 title: "Website Code Changelog"
-date: 2026-05-15T11:30:06-04:00
+date: 2026-05-30T11:54:06-04:00
 draft: false
 toc: false
 images:
@@ -10,6 +10,8 @@ tags:
 ---
 
 This is manually mirrored from my discord under the "website-info" channel.
+
+Some of these posts aren't from the discord and have just been manually added to this changelog.
 
 #### 6-23-2025 
 4:26PM
@@ -146,3 +148,19 @@ The website seems to be stable on the latest version.
 
 Here is the latest commit to the website update, I made another small commit but it was just fixing something:
 https://github.com/kelson8/FlaskWeb/commit/1edd83b4b9f4ab9fe67ac8501573ebd364baf6b4
+
+---
+
+#### 5-30-2026
+11:52AM
+
+I plan on migrating the website from Python Flask to NextJS sometime in the future, this new website will be licensed under
+ the AGPLv3 license instead of GPLv3 like my current website is.
+I am also switching from Bootstrap CSS to Tailwind CSS to make my website look nicer.
+
+Here is the code to the new website, which also has just a single screenshot for now until I'm ready to add more to it.
+* https://github.com/kelson8/KelsonCraft-NextJS
+
+This will probably take me a few weeks to finalize the new website and have it ready to replace the main [KelsonCraft](https://kelsoncraft.net) website, currently I am missing parts for this such as the video page using [plyr-react](https://www.npmjs.com/package/plyr-react) for the video pages, and authentication which I will add in the future.
+
+I may just skip adding authentication and the SQLite DB until later and just work on getting the videos working for the website.
