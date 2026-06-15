@@ -25,15 +25,18 @@ RESTART_NGINX_CONTAINER=true
 
 # If this is true, it should set the variables to my local environment
 # If false, it will run off the variables for my VPS.
-LOCAL_SITE=false
+LOCAL_SITE=true
 
 if [ $LOCAL_SITE = true ]; then
     baseURL=https://blog.local.kelsoncraft.net
     # KCNet Hugo blog folder
-    BLOG_DIR="$HOME/git/docker-projects/ubuntu-server/kcnet-blog"
+    BLOG_DIR="$HOME/Documents/docker_misc/kcnet-blog"
     # KCNet Blog Nginx folder, and nginx data folder
-    NGINX_BLOG_DIR="$HOME/git/docker-projects/ubuntu-server/kcnet-blog-nginx"
-    NGINX_BLOG_DATA_DIR="$HOME/git/docker-projects/ubuntu-server/kcnet-blog-nginx/data"
+    NGINX_BLOG_DIR="$HOME/Documents/docker_misc/kcnet-blog-nginx"
+
+    NGINX_BLOG_DATA_DIR="$HOME/Documents/docker_misc/kcnet-blog-nginx/data"
+    NGINX_BLOG_DATA_DIR_TEST="$NGINX_BLOG_DIR/data"
+    echo "$NGINX_BLOG_DATA_DIR_TEST"
 else
     baseURL=https://blog.kelsoncraft.net
 
@@ -62,6 +65,13 @@ if [ $BUILD_DOCKER_IMAGE = true ]; then
    docker run --rm -v "$(pwd):/src" kcnet-blog hugo --destination public --baseURL "$baseURL"
 fi
 
+read -p "WARNING this will wipe the contents of the $NGINX_BLOG_DIR folder, would you like to continue? " -n 1 -r
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Not wiping the $NGINX_BLOG_DIR folder, exiting."
+    exit 0
+fi
+
 # Delete old nginx data directory, copy new files to the nginx data directory
 if [ $runDockerImage = true ]; then
     # Remove the old data files.
@@ -72,6 +82,12 @@ if [ $runDockerImage = true ]; then
         mkdir "$NGINX_BLOG_DATA_DIR"
     else
         mkdir "$NGINX_BLOG_DATA_DIR"
+    fi
+
+    # Attempt to copy files from Nginx container into NGINX_BLOG_DIR
+    if [ -d "$NGINX_BLOG_DATA_DIR" ]; then
+        cp "$BLOG_DIR"/data/nginx/kcnet-blog-nginx/* "$NGINX_BLOG_DIR/" -r
+        echo "Copied Nginx data files for blog into $NGINX_BLOG_DIR"
     fi
 
     # Copy new files into the public folder

@@ -1,0 +1,7 @@
+
+# This gets built with the ./build-docker-image.sh script
+data/
+!config/
+
+# Exclude logs
+logs/

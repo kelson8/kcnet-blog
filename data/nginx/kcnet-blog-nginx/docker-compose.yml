@@ -1,0 +1,35 @@
+services:
+  nginx:
+    container_name: kcnet-blog-nginx
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      # - "8080:80"
+      - "8081:80"
+    restart: unless-stopped
+    networks:
+      - testing
+    volumes:
+      - ./data:/var/www/html/
+      - ./logs/nginx:/var/log/nginx/
+      - ./config:/etc/nginx
+    environment:
+      - TZ=America/New_York
+
+  php:
+    container_name: php_kcnet-blog
+    image: php:fpm-alpine
+    networks:
+      - testing
+    restart: unless-stopped
+    volumes:
+      - ./data/:/var/www/html/
+      - ./logs/php.log:/var/log/fpm-php.www.log
+    environment:
+      - TZ=America/New_York
+
+networks:
+  testing:
+    external: true
+
