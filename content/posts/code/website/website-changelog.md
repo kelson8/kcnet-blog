@@ -1,6 +1,6 @@
 ---
 title: "Website Code Changelog"
-date: 2026-05-30T11:54:06-04:00
+date: 2026-06-15T15:14:06-04:00
 draft: false
 toc: false
 images:
@@ -164,3 +164,24 @@ Here is the code to the new website, which also has just a single screenshot for
 This will probably take me a few weeks to finalize the new website and have it ready to replace the main [KelsonCraft](https://kelsoncraft.net) website, currently I am missing parts for this such as the video page using [plyr-react](https://www.npmjs.com/package/plyr-react) for the video pages, and authentication which I will add in the future.
 
 I may just skip adding authentication and the SQLite DB until later and just work on getting the videos working for the website.
+
+---
+
+#### 6-13-2026
+
+6:19PM
+
+I now have another cheap VPS again from Hetzner to host the new Astro website, I need to work on getting docker support for it before I can fully deploy it.
+
+I may move this website back to the main VPS sometime which would bring the website offline for a bit once I get it all ready.
+
+#### 6-15-2026
+
+3:10PM
+
+Here is the new Kelsoncraft website, I mostly have it working now and I just need to switch the main domain to using it.
+This is the website changed from Python Flask to the Astro framework and it's just a basic static site so it uses very little resources.
+
+I still need to figure out how to fix the dark mode and navbar when it is on the main domain, it doesn't want to work for some reason.
+
+https://new.kelsoncraft.net/
