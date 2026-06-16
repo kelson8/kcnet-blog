@@ -185,3 +185,11 @@ This is the website changed from Python Flask to the Astro framework and it's ju
 I still need to figure out how to fix the dark mode and navbar when it is on the main domain, it doesn't want to work for some reason.
 
 https://new.kelsoncraft.net/
+
+8:58PM
+
+Now the primary website is fully switched over to the new code, this took me a bit to figure somethings out.
+This new setup should allow me to update the website much easier then before.
+
+https://kelsoncraft.net/
+
