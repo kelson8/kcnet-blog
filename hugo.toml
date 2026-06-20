@@ -92,4 +92,43 @@ enableEmoji     = true
     name       = "Posts"
     url        = "posts/"
 
+##
+# Minification settings for optimal performance
+# https://klikukliku.dev/posts/hugo-css-optimization/
+# TODO Modify this or remove it if it's not needed.
+[minify]
+  minifyOutput = true
+
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepComments = false
+      keepWhitespace = false
+      keepEndTags = true
+      keepQuotes = false
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+
+    [minify.tdewolff.css]
+      precision = 2
+
+    [minify.tdewolff.js]
+      keepVarNames = false
+      precision = 2
+      version = 2022
+
+    [minify.tdewolff.json]
+      precision = 2
+
+    [minify.tdewolff.svg]
+      keepComments = false
+      precision = 0
+
+    [minify.tdewolff.xml]
+      keepWhitespace = false
+
+# I'm not exactly sure what this is for.
+# [build]
+  # writeStats = true
+##
+
 ####

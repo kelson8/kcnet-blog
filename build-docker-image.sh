@@ -62,7 +62,8 @@ if [ $BUILD_DOCKER_IMAGE = true ]; then
         docker build -t kcnet-blog .
     fi
 
-   docker run --rm -v "$(pwd):/src" kcnet-blog hugo --destination public --baseURL "$baseURL"
+    # This now makes the build output smaller.
+    docker run --rm -v "$(pwd):/src" kcnet-blog hugo --destination public --baseURL "$baseURL" --minify
 fi
 
 read -p "WARNING this will wipe the contents of the $NGINX_BLOG_DIR folder, would you like to continue? " -n 1 -r

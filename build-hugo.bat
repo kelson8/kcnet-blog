@@ -7,4 +7,4 @@ set "port=8081"
 
 @REM --buildDrafts can be added to include drafts in the build if needed.
 
-.\hugo.exe --baseURL %protocol%://%bindIP%:%port%
+.\hugo.exe --baseURL %protocol%://%bindIP%:%port% --minify
