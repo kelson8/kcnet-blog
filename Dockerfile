@@ -10,7 +10,9 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Set the Hugo version
-ENV HUGO_VERSION=0.151.0
+# ENV HUGO_VERSION=0.151.0
+# Updated to 0.164.0
+ENV HUGO_VERSION=0.164.0
 
 ENV HUGO_PORT=8080
 
