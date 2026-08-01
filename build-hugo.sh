@@ -17,7 +17,7 @@ port=8081
 
 # This basic check will either run the blog with "blog.local.kelsoncraft.net" for traefik, or "ubuntu-server.lan" without it.
 if [ $publicURLEnabled = true ]; then
-    ./hugo.exe --baseURL "$protocol://$serverURLPublic"
+    ./hugo --baseURL "$protocol://$serverURLPublic"
 else
-    ./hugo.exe --baseURL "$protocol://$serverURL:$port"
+    ./hugo --baseURL "$protocol://$serverURL:$port"
 fi
