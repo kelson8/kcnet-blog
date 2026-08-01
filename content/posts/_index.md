@@ -1,12 +1,14 @@
 # Tags
 * [Code](/tags/code)
-* [Website](/tags/website)
-* [Minecraft](/tags/minecraft)
-* [Linux](/tags/linux)
-* [Web Browser](/tags/web-browser)
-* [Tech](/tags/tech)
 * [Games](/tags/games)
 * [GTA](/tags/gta)
+* [Homelab](/tags/homelab)
+* [Linux](/tags/linux)
+* [Minecraft](/tags/minecraft)
+* [Tech](/tags/tech)
+* [Servers](/tags/servers)
+* [Web Browser](/tags/web-browser)
+* [Website](/tags/website)
 * [Untagged](/tags/untagged)
 
 ---
