@@ -42,6 +42,8 @@ All themes added as submodules:
 Look into these themes later:
 * [hugo-blog-awesome](https://themes.gohugo.io/themes/hugo-blog-awesome/)
 
+I have modified the [hello-friend-ng](https://github.com/kelson8/hello-friend-ng) theme, it has a couple of fixes for the the KCNet blog.
+
 ## License
 I have decided to license the content such as the markdown files under the CC BY 4.0 license.
 
