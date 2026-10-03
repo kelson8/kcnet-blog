@@ -30,13 +30,11 @@ LOCAL_SITE=false
 if [ $LOCAL_SITE = true ]; then
     baseURL=https://blog.local.kelsoncraft.net
     # KCNet Hugo blog folder
-    BLOG_DIR="$HOME/Documents/docker_misc/kcnet-blog"
+    BLOG_DIR="/opt/kcnet-blog"
     # KCNet Blog Nginx folder, and nginx data folder
-    NGINX_BLOG_DIR="$HOME/Documents/docker_misc/kcnet-blog-nginx"
+    NGINX_BLOG_DIR="/opt/kcnet-blog-nginx"
 
-    NGINX_BLOG_DATA_DIR="$HOME/Documents/docker_misc/kcnet-blog-nginx/data"
-    NGINX_BLOG_DATA_DIR_TEST="$NGINX_BLOG_DIR/data"
-    echo "$NGINX_BLOG_DATA_DIR_TEST"
+    NGINX_BLOG_DATA_DIR="/opt/kcnet-blog/data"
 else
     baseURL=https://blog.kelsoncraft.net
 
