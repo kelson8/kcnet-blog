@@ -22,8 +22,8 @@ services:
     environment:
       HUGO_ENV: "development"
       # HUGO_BASEURL: "http://ubuntu-server.lan:8081"  # Set your baseURL here
-      HUGO_BASEURL: "https://blog.local.kelsoncraft.net"  # Set your baseURL here
-    command: ["hugo", "server", "--bind", "0.0.0.0", "--port=8081", "--baseURL", "https://blog.local.kelsoncraft.net", "--watch", "--appendPort=false"]
+      HUGO_BASEURL: "https://blog.kelsoncraft.net"  # Set your baseURL here
+    command: ["hugo", "server", "--bind", "0.0.0.0", "--port=8081", "--baseURL", "https://blog.kelsoncraft.net", "--watch", "--appendPort=false"]
 #    command: ["hugo", "server", "--bind", "0.0.0.0", "--port=8081", "--baseURL", "http://localhost:8080", "--watch"]
 
   hugo-build:
@@ -36,9 +36,9 @@ services:
     environment:
       HUGO_ENV: "production"
       # HUGO_BASEURL: "http://ubuntu-server.lan:8081"  # Set your baseURL here
-      HUGO_BASEURL: "https://blog.local.kelsoncraft.net"  # Set your baseURL here
+      HUGO_BASEURL: "https://blog.kelsoncraft.net"  # Set your baseURL here
     # command: ["hugo", "--port=8080", "--baseURL", "http://localhost:8080", "--appendPort=false"]
-    command: ["hugo", "--port=8081", "--baseURL", "--baseURL", "https://blog.local.kelsoncraft.net", "--appendPort=false"]
+    command: ["hugo", "--port=8081", "--baseURL", "--baseURL", "https://blog.kelsoncraft.net", "--appendPort=false"]
 
 networks:
   proxy:

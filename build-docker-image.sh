@@ -25,7 +25,7 @@ RESTART_NGINX_CONTAINER=true
 
 # If this is true, it should set the variables to my local environment
 # If false, it will run off the variables for my VPS.
-LOCAL_SITE=true
+LOCAL_SITE=false
 
 if [ $LOCAL_SITE = true ]; then
     baseURL=https://blog.local.kelsoncraft.net
