@@ -17,17 +17,19 @@ services:
     environment:
       - TZ=America/New_York
 
-  php:
-    container_name: php_kcnet-blog
-    image: php:fpm-alpine
-    networks:
-      - testing
-    restart: unless-stopped
-    volumes:
-      - ./data/:/var/www/html/
-      - ./logs/php.log:/var/log/fpm-php.www.log
-    environment:
-      - TZ=America/New_York
+  # Disabled due to new exploits
+  # https://cybersecuritynews.com/php-early-exploitation-attempts/
+  # php:
+  #   container_name: php_kcnet-blog
+  #   image: php:fpm-alpine
+  #   networks:
+  #     - testing
+  #   restart: unless-stopped
+  #   volumes:
+  #     - ./data/:/var/www/html/
+  #     - ./logs/php.log:/var/log/fpm-php.www.log
+  #   environment:
+  #     - TZ=America/New_York
 
 networks:
   testing:

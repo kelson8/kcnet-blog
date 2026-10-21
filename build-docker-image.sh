@@ -34,7 +34,7 @@ if [ $LOCAL_SITE = true ]; then
     # KCNet Blog Nginx folder, and nginx data folder
     NGINX_BLOG_DIR="/opt/kcnet-blog-nginx"
 
-    NGINX_BLOG_DATA_DIR="/opt/kcnet-blog/data"
+    NGINX_BLOG_DATA_DIR="/opt/kcnet-blog-nginx/data"
 else
     baseURL=https://blog.kelsoncraft.net
 
